@@ -26,7 +26,7 @@ bcrypt.compare(someOtherPlaintextPassword, hash, (err, res) => {
 */
 
 
-bcrypt.hash(myPlaintextPassword, salt, (err, hash) => {
+bcrypt.hash(myPlaintextPassword, saltRounds, (err, hash) => {
     console.log(hash);
     bcrypt.compare(myPlaintextPassword, hash, (err, res) => {
       console.log(res); //true
