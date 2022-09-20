@@ -31,11 +31,6 @@ bcrypt.hash(myPlaintextPassword, salt, (err, hash) => {
     bcrypt.compare(myPlaintextPassword, hash, (err, res) => {
       console.log(res); //true
     });
-    
-    bcrypt.compare(someOtherPlaintextPassword, hash, (err, res) => {
-        console.log(res);
-    });
-    
 });
 
 
