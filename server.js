@@ -10,7 +10,7 @@ const myPlaintextPassword = 'sUperpassw0rd!';
 const someOtherPlaintextPassword = 'pass123';
 
 //START_ASYNC -do not remove notes, place code between correct pair of notes.
-bcrypt.hash('sUperpassw0rd!', saltRounds, (err, hash) => {
+bcrypt.hash('sUperpassw0rd!', 13, (err, hash) => {
     console.log(hash);
     bcrypt.compare('sUperpassw0rd!', hash, (err, res) => {
       //console.log(res); //true
