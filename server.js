@@ -31,9 +31,11 @@ bcrypt.hash('passw0rd!', 13, (err, hash) => {
     bcrypt.compare('passw0rd!', hash, (err, res) => {
       console.log(res); //true
     });
+    /*
     bcrypt.compare(someOtherPlaintextPassword, hash, (err, res) => {
         console.log(res);
     });
+    */
 });
 
 
