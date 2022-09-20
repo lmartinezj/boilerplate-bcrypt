@@ -13,7 +13,7 @@ const someOtherPlaintextPassword = 'pass123';
 bcrypt.hash('sUperpassw0rd!', 13, (err, hash) => {
     console.log(hash);
     bcrypt.compare('sUperpassw0rd!', hash, (err, res) => {
-      //console.log(res); //true
+      console.log(res); //true
     });
 });
 
